@@ -1,0 +1,25 @@
+﻿@model IEnumerable<MVCApp.DAL.Subscription>
+@{
+    ViewBag.Title = "Audit";
+}
+<h2>Subscription</h2>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var modelData = @Html.Raw(Json.Encode(Model))
+        $("#grid").kendoGrid({
+              pageable: true
+            , sortable: true
+            , silectable: true
+            , selectable: true
+            , columns: [
+            { field: "SubscriberEndpoint", title: "SubscriberEndpoint" }
+         , { field: "MessageType", title: "MessageType" }
+         , { field: "Version", title: "Version" }
+         , { field: "TypeName", title: "TypeName" }
+            ]
+             , dataSource: { pageSize: 10, data:modelData }
+        });
+    });
+</script>
+<table id="grid">
+</table>

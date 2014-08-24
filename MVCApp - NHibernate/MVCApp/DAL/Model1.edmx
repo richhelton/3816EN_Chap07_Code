@@ -1,0 +1,945 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="nservicebusModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="nservicebusModelStoreContainer">
+          <EntitySet Name="audit" EntityType="nservicebusModel.Store.audit" store:Type="Tables" store:Schema="dbo" store:Name="audit">
+            <DefiningQuery>SELECT 
+      [audit].[Id] AS [Id], 
+      [audit].[CorrelationId] AS [CorrelationId], 
+      [audit].[ReplyToAddress] AS [ReplyToAddress], 
+      [audit].[Recoverable] AS [Recoverable], 
+      [audit].[Expires] AS [Expires], 
+      [audit].[Headers] AS [Headers], 
+      [audit].[Body] AS [Body], 
+      [audit].[RowVersion] AS [RowVersion]
+      FROM [dbo].[audit] AS [audit]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="error" EntityType="nservicebusModel.Store.error" store:Type="Tables" store:Schema="dbo" store:Name="error">
+            <DefiningQuery>SELECT 
+      [error].[Id] AS [Id], 
+      [error].[CorrelationId] AS [CorrelationId], 
+      [error].[ReplyToAddress] AS [ReplyToAddress], 
+      [error].[Recoverable] AS [Recoverable], 
+      [error].[Expires] AS [Expires], 
+      [error].[Headers] AS [Headers], 
+      [error].[Body] AS [Body], 
+      [error].[RowVersion] AS [RowVersion]
+      FROM [dbo].[error] AS [error]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="MyPublisher" EntityType="nservicebusModel.Store.MyPublisher" store:Type="Tables" store:Schema="dbo" store:Name="MyPublisher">
+            <DefiningQuery>SELECT 
+      [MyPublisher].[Id] AS [Id], 
+      [MyPublisher].[CorrelationId] AS [CorrelationId], 
+      [MyPublisher].[ReplyToAddress] AS [ReplyToAddress], 
+      [MyPublisher].[Recoverable] AS [Recoverable], 
+      [MyPublisher].[Expires] AS [Expires], 
+      [MyPublisher].[Headers] AS [Headers], 
+      [MyPublisher].[Body] AS [Body], 
+      [MyPublisher].[RowVersion] AS [RowVersion]
+      FROM [dbo].[MyPublisher] AS [MyPublisher]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="MyPublisher_Retries" EntityType="nservicebusModel.Store.MyPublisher_Retries" store:Type="Tables" store:Schema="dbo" store:Name="MyPublisher.Retries">
+            <DefiningQuery>SELECT 
+      [MyPublisher_Retries].[Id] AS [Id], 
+      [MyPublisher_Retries].[CorrelationId] AS [CorrelationId], 
+      [MyPublisher_Retries].[ReplyToAddress] AS [ReplyToAddress], 
+      [MyPublisher_Retries].[Recoverable] AS [Recoverable], 
+      [MyPublisher_Retries].[Expires] AS [Expires], 
+      [MyPublisher_Retries].[Headers] AS [Headers], 
+      [MyPublisher_Retries].[Body] AS [Body], 
+      [MyPublisher_Retries].[RowVersion] AS [RowVersion]
+      FROM [dbo].[MyPublisher.Retries] AS [MyPublisher_Retries]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="MyPublisher_Timeouts" EntityType="nservicebusModel.Store.MyPublisher_Timeouts" store:Type="Tables" store:Schema="dbo" store:Name="MyPublisher.Timeouts">
+            <DefiningQuery>SELECT 
+      [MyPublisher_Timeouts].[Id] AS [Id], 
+      [MyPublisher_Timeouts].[CorrelationId] AS [CorrelationId], 
+      [MyPublisher_Timeouts].[ReplyToAddress] AS [ReplyToAddress], 
+      [MyPublisher_Timeouts].[Recoverable] AS [Recoverable], 
+      [MyPublisher_Timeouts].[Expires] AS [Expires], 
+      [MyPublisher_Timeouts].[Headers] AS [Headers], 
+      [MyPublisher_Timeouts].[Body] AS [Body], 
+      [MyPublisher_Timeouts].[RowVersion] AS [RowVersion]
+      FROM [dbo].[MyPublisher.Timeouts] AS [MyPublisher_Timeouts]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="MyPublisher_TimeoutsDispatcher" EntityType="nservicebusModel.Store.MyPublisher_TimeoutsDispatcher" store:Type="Tables" store:Schema="dbo" store:Name="MyPublisher.TimeoutsDispatcher">
+            <DefiningQuery>SELECT 
+      [MyPublisher_TimeoutsDispatcher].[Id] AS [Id], 
+      [MyPublisher_TimeoutsDispatcher].[CorrelationId] AS [CorrelationId], 
+      [MyPublisher_TimeoutsDispatcher].[ReplyToAddress] AS [ReplyToAddress], 
+      [MyPublisher_TimeoutsDispatcher].[Recoverable] AS [Recoverable], 
+      [MyPublisher_TimeoutsDispatcher].[Expires] AS [Expires], 
+      [MyPublisher_TimeoutsDispatcher].[Headers] AS [Headers], 
+      [MyPublisher_TimeoutsDispatcher].[Body] AS [Body], 
+      [MyPublisher_TimeoutsDispatcher].[RowVersion] AS [RowVersion]
+      FROM [dbo].[MyPublisher.TimeoutsDispatcher] AS [MyPublisher_TimeoutsDispatcher]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Subscriber1" EntityType="nservicebusModel.Store.Subscriber1" store:Type="Tables" store:Schema="dbo" store:Name="Subscriber1">
+            <DefiningQuery>SELECT 
+      [Subscriber1].[Id] AS [Id], 
+      [Subscriber1].[CorrelationId] AS [CorrelationId], 
+      [Subscriber1].[ReplyToAddress] AS [ReplyToAddress], 
+      [Subscriber1].[Recoverable] AS [Recoverable], 
+      [Subscriber1].[Expires] AS [Expires], 
+      [Subscriber1].[Headers] AS [Headers], 
+      [Subscriber1].[Body] AS [Body], 
+      [Subscriber1].[RowVersion] AS [RowVersion]
+      FROM [dbo].[Subscriber1] AS [Subscriber1]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Subscriber1_Retries" EntityType="nservicebusModel.Store.Subscriber1_Retries" store:Type="Tables" store:Schema="dbo" store:Name="Subscriber1.Retries">
+            <DefiningQuery>SELECT 
+      [Subscriber1_Retries].[Id] AS [Id], 
+      [Subscriber1_Retries].[CorrelationId] AS [CorrelationId], 
+      [Subscriber1_Retries].[ReplyToAddress] AS [ReplyToAddress], 
+      [Subscriber1_Retries].[Recoverable] AS [Recoverable], 
+      [Subscriber1_Retries].[Expires] AS [Expires], 
+      [Subscriber1_Retries].[Headers] AS [Headers], 
+      [Subscriber1_Retries].[Body] AS [Body], 
+      [Subscriber1_Retries].[RowVersion] AS [RowVersion]
+      FROM [dbo].[Subscriber1.Retries] AS [Subscriber1_Retries]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Subscriber1_Timeouts" EntityType="nservicebusModel.Store.Subscriber1_Timeouts" store:Type="Tables" store:Schema="dbo" store:Name="Subscriber1.Timeouts">
+            <DefiningQuery>SELECT 
+      [Subscriber1_Timeouts].[Id] AS [Id], 
+      [Subscriber1_Timeouts].[CorrelationId] AS [CorrelationId], 
+      [Subscriber1_Timeouts].[ReplyToAddress] AS [ReplyToAddress], 
+      [Subscriber1_Timeouts].[Recoverable] AS [Recoverable], 
+      [Subscriber1_Timeouts].[Expires] AS [Expires], 
+      [Subscriber1_Timeouts].[Headers] AS [Headers], 
+      [Subscriber1_Timeouts].[Body] AS [Body], 
+      [Subscriber1_Timeouts].[RowVersion] AS [RowVersion]
+      FROM [dbo].[Subscriber1.Timeouts] AS [Subscriber1_Timeouts]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Subscriber1_TimeoutsDispatcher" EntityType="nservicebusModel.Store.Subscriber1_TimeoutsDispatcher" store:Type="Tables" store:Schema="dbo" store:Name="Subscriber1.TimeoutsDispatcher">
+            <DefiningQuery>SELECT 
+      [Subscriber1_TimeoutsDispatcher].[Id] AS [Id], 
+      [Subscriber1_TimeoutsDispatcher].[CorrelationId] AS [CorrelationId], 
+      [Subscriber1_TimeoutsDispatcher].[ReplyToAddress] AS [ReplyToAddress], 
+      [Subscriber1_TimeoutsDispatcher].[Recoverable] AS [Recoverable], 
+      [Subscriber1_TimeoutsDispatcher].[Expires] AS [Expires], 
+      [Subscriber1_TimeoutsDispatcher].[Headers] AS [Headers], 
+      [Subscriber1_TimeoutsDispatcher].[Body] AS [Body], 
+      [Subscriber1_TimeoutsDispatcher].[RowVersion] AS [RowVersion]
+      FROM [dbo].[Subscriber1.TimeoutsDispatcher] AS [Subscriber1_TimeoutsDispatcher]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Subscriber2" EntityType="nservicebusModel.Store.Subscriber2" store:Type="Tables" store:Schema="dbo" store:Name="Subscriber2">
+            <DefiningQuery>SELECT 
+      [Subscriber2].[Id] AS [Id], 
+      [Subscriber2].[CorrelationId] AS [CorrelationId], 
+      [Subscriber2].[ReplyToAddress] AS [ReplyToAddress], 
+      [Subscriber2].[Recoverable] AS [Recoverable], 
+      [Subscriber2].[Expires] AS [Expires], 
+      [Subscriber2].[Headers] AS [Headers], 
+      [Subscriber2].[Body] AS [Body], 
+      [Subscriber2].[RowVersion] AS [RowVersion]
+      FROM [dbo].[Subscriber2] AS [Subscriber2]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Subscriber2_Retries" EntityType="nservicebusModel.Store.Subscriber2_Retries" store:Type="Tables" store:Schema="dbo" store:Name="Subscriber2.Retries">
+            <DefiningQuery>SELECT 
+      [Subscriber2_Retries].[Id] AS [Id], 
+      [Subscriber2_Retries].[CorrelationId] AS [CorrelationId], 
+      [Subscriber2_Retries].[ReplyToAddress] AS [ReplyToAddress], 
+      [Subscriber2_Retries].[Recoverable] AS [Recoverable], 
+      [Subscriber2_Retries].[Expires] AS [Expires], 
+      [Subscriber2_Retries].[Headers] AS [Headers], 
+      [Subscriber2_Retries].[Body] AS [Body], 
+      [Subscriber2_Retries].[RowVersion] AS [RowVersion]
+      FROM [dbo].[Subscriber2.Retries] AS [Subscriber2_Retries]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Subscriber2_Timeouts" EntityType="nservicebusModel.Store.Subscriber2_Timeouts" store:Type="Tables" store:Schema="dbo" store:Name="Subscriber2.Timeouts">
+            <DefiningQuery>SELECT 
+      [Subscriber2_Timeouts].[Id] AS [Id], 
+      [Subscriber2_Timeouts].[CorrelationId] AS [CorrelationId], 
+      [Subscriber2_Timeouts].[ReplyToAddress] AS [ReplyToAddress], 
+      [Subscriber2_Timeouts].[Recoverable] AS [Recoverable], 
+      [Subscriber2_Timeouts].[Expires] AS [Expires], 
+      [Subscriber2_Timeouts].[Headers] AS [Headers], 
+      [Subscriber2_Timeouts].[Body] AS [Body], 
+      [Subscriber2_Timeouts].[RowVersion] AS [RowVersion]
+      FROM [dbo].[Subscriber2.Timeouts] AS [Subscriber2_Timeouts]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Subscriber2_TimeoutsDispatcher" EntityType="nservicebusModel.Store.Subscriber2_TimeoutsDispatcher" store:Type="Tables" store:Schema="dbo" store:Name="Subscriber2.TimeoutsDispatcher">
+            <DefiningQuery>SELECT 
+      [Subscriber2_TimeoutsDispatcher].[Id] AS [Id], 
+      [Subscriber2_TimeoutsDispatcher].[CorrelationId] AS [CorrelationId], 
+      [Subscriber2_TimeoutsDispatcher].[ReplyToAddress] AS [ReplyToAddress], 
+      [Subscriber2_TimeoutsDispatcher].[Recoverable] AS [Recoverable], 
+      [Subscriber2_TimeoutsDispatcher].[Expires] AS [Expires], 
+      [Subscriber2_TimeoutsDispatcher].[Headers] AS [Headers], 
+      [Subscriber2_TimeoutsDispatcher].[Body] AS [Body], 
+      [Subscriber2_TimeoutsDispatcher].[RowVersion] AS [RowVersion]
+      FROM [dbo].[Subscriber2.TimeoutsDispatcher] AS [Subscriber2_TimeoutsDispatcher]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Subscription" EntityType="nservicebusModel.Store.Subscription" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'nservicebus.dbo.audit' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="audit">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Recoverable" />
+            <PropertyRef Name="Headers" />
+            <PropertyRef Name="RowVersion" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CorrelationId" Type="varchar" MaxLength="255" />
+          <Property Name="ReplyToAddress" Type="varchar" MaxLength="255" />
+          <Property Name="Recoverable" Type="bit" Nullable="false" />
+          <Property Name="Expires" Type="datetime" />
+          <Property Name="Headers" Type="varchar(max)" Nullable="false" />
+          <Property Name="Body" Type="varbinary(max)" />
+          <Property Name="RowVersion" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'nservicebus.dbo.error' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="error">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Recoverable" />
+            <PropertyRef Name="Headers" />
+            <PropertyRef Name="RowVersion" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CorrelationId" Type="varchar" MaxLength="255" />
+          <Property Name="ReplyToAddress" Type="varchar" MaxLength="255" />
+          <Property Name="Recoverable" Type="bit" Nullable="false" />
+          <Property Name="Expires" Type="datetime" />
+          <Property Name="Headers" Type="varchar(max)" Nullable="false" />
+          <Property Name="Body" Type="varbinary(max)" />
+          <Property Name="RowVersion" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'nservicebus.dbo.MyPublisher' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="MyPublisher">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Recoverable" />
+            <PropertyRef Name="Headers" />
+            <PropertyRef Name="RowVersion" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CorrelationId" Type="varchar" MaxLength="255" />
+          <Property Name="ReplyToAddress" Type="varchar" MaxLength="255" />
+          <Property Name="Recoverable" Type="bit" Nullable="false" />
+          <Property Name="Expires" Type="datetime" />
+          <Property Name="Headers" Type="varchar(max)" Nullable="false" />
+          <Property Name="Body" Type="varbinary(max)" />
+          <Property Name="RowVersion" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'nservicebus.dbo.MyPublisher.Retries' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="MyPublisher_Retries">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Recoverable" />
+            <PropertyRef Name="Headers" />
+            <PropertyRef Name="RowVersion" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CorrelationId" Type="varchar" MaxLength="255" />
+          <Property Name="ReplyToAddress" Type="varchar" MaxLength="255" />
+          <Property Name="Recoverable" Type="bit" Nullable="false" />
+          <Property Name="Expires" Type="datetime" />
+          <Property Name="Headers" Type="varchar(max)" Nullable="false" />
+          <Property Name="Body" Type="varbinary(max)" />
+          <Property Name="RowVersion" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'nservicebus.dbo.MyPublisher.Timeouts' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="MyPublisher_Timeouts">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Recoverable" />
+            <PropertyRef Name="Headers" />
+            <PropertyRef Name="RowVersion" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CorrelationId" Type="varchar" MaxLength="255" />
+          <Property Name="ReplyToAddress" Type="varchar" MaxLength="255" />
+          <Property Name="Recoverable" Type="bit" Nullable="false" />
+          <Property Name="Expires" Type="datetime" />
+          <Property Name="Headers" Type="varchar(max)" Nullable="false" />
+          <Property Name="Body" Type="varbinary(max)" />
+          <Property Name="RowVersion" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'nservicebus.dbo.MyPublisher.TimeoutsDispatcher' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="MyPublisher_TimeoutsDispatcher">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Recoverable" />
+            <PropertyRef Name="Headers" />
+            <PropertyRef Name="RowVersion" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CorrelationId" Type="varchar" MaxLength="255" />
+          <Property Name="ReplyToAddress" Type="varchar" MaxLength="255" />
+          <Property Name="Recoverable" Type="bit" Nullable="false" />
+          <Property Name="Expires" Type="datetime" />
+          <Property Name="Headers" Type="varchar(max)" Nullable="false" />
+          <Property Name="Body" Type="varbinary(max)" />
+          <Property Name="RowVersion" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'nservicebus.dbo.Subscriber1' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="Subscriber1">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Recoverable" />
+            <PropertyRef Name="Headers" />
+            <PropertyRef Name="RowVersion" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CorrelationId" Type="varchar" MaxLength="255" />
+          <Property Name="ReplyToAddress" Type="varchar" MaxLength="255" />
+          <Property Name="Recoverable" Type="bit" Nullable="false" />
+          <Property Name="Expires" Type="datetime" />
+          <Property Name="Headers" Type="varchar(max)" Nullable="false" />
+          <Property Name="Body" Type="varbinary(max)" />
+          <Property Name="RowVersion" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'nservicebus.dbo.Subscriber1.Retries' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="Subscriber1_Retries">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Recoverable" />
+            <PropertyRef Name="Headers" />
+            <PropertyRef Name="RowVersion" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CorrelationId" Type="varchar" MaxLength="255" />
+          <Property Name="ReplyToAddress" Type="varchar" MaxLength="255" />
+          <Property Name="Recoverable" Type="bit" Nullable="false" />
+          <Property Name="Expires" Type="datetime" />
+          <Property Name="Headers" Type="varchar(max)" Nullable="false" />
+          <Property Name="Body" Type="varbinary(max)" />
+          <Property Name="RowVersion" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'nservicebus.dbo.Subscriber1.Timeouts' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="Subscriber1_Timeouts">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Recoverable" />
+            <PropertyRef Name="Headers" />
+            <PropertyRef Name="RowVersion" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CorrelationId" Type="varchar" MaxLength="255" />
+          <Property Name="ReplyToAddress" Type="varchar" MaxLength="255" />
+          <Property Name="Recoverable" Type="bit" Nullable="false" />
+          <Property Name="Expires" Type="datetime" />
+          <Property Name="Headers" Type="varchar(max)" Nullable="false" />
+          <Property Name="Body" Type="varbinary(max)" />
+          <Property Name="RowVersion" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'nservicebus.dbo.Subscriber1.TimeoutsDispatcher' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="Subscriber1_TimeoutsDispatcher">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Recoverable" />
+            <PropertyRef Name="Headers" />
+            <PropertyRef Name="RowVersion" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CorrelationId" Type="varchar" MaxLength="255" />
+          <Property Name="ReplyToAddress" Type="varchar" MaxLength="255" />
+          <Property Name="Recoverable" Type="bit" Nullable="false" />
+          <Property Name="Expires" Type="datetime" />
+          <Property Name="Headers" Type="varchar(max)" Nullable="false" />
+          <Property Name="Body" Type="varbinary(max)" />
+          <Property Name="RowVersion" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'nservicebus.dbo.Subscriber2' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="Subscriber2">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Recoverable" />
+            <PropertyRef Name="Headers" />
+            <PropertyRef Name="RowVersion" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CorrelationId" Type="varchar" MaxLength="255" />
+          <Property Name="ReplyToAddress" Type="varchar" MaxLength="255" />
+          <Property Name="Recoverable" Type="bit" Nullable="false" />
+          <Property Name="Expires" Type="datetime" />
+          <Property Name="Headers" Type="varchar(max)" Nullable="false" />
+          <Property Name="Body" Type="varbinary(max)" />
+          <Property Name="RowVersion" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'nservicebus.dbo.Subscriber2.Retries' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="Subscriber2_Retries">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Recoverable" />
+            <PropertyRef Name="Headers" />
+            <PropertyRef Name="RowVersion" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CorrelationId" Type="varchar" MaxLength="255" />
+          <Property Name="ReplyToAddress" Type="varchar" MaxLength="255" />
+          <Property Name="Recoverable" Type="bit" Nullable="false" />
+          <Property Name="Expires" Type="datetime" />
+          <Property Name="Headers" Type="varchar(max)" Nullable="false" />
+          <Property Name="Body" Type="varbinary(max)" />
+          <Property Name="RowVersion" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'nservicebus.dbo.Subscriber2.Timeouts' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="Subscriber2_Timeouts">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Recoverable" />
+            <PropertyRef Name="Headers" />
+            <PropertyRef Name="RowVersion" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CorrelationId" Type="varchar" MaxLength="255" />
+          <Property Name="ReplyToAddress" Type="varchar" MaxLength="255" />
+          <Property Name="Recoverable" Type="bit" Nullable="false" />
+          <Property Name="Expires" Type="datetime" />
+          <Property Name="Headers" Type="varchar(max)" Nullable="false" />
+          <Property Name="Body" Type="varbinary(max)" />
+          <Property Name="RowVersion" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'nservicebus.dbo.Subscriber2.TimeoutsDispatcher' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="Subscriber2_TimeoutsDispatcher">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Recoverable" />
+            <PropertyRef Name="Headers" />
+            <PropertyRef Name="RowVersion" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CorrelationId" Type="varchar" MaxLength="255" />
+          <Property Name="ReplyToAddress" Type="varchar" MaxLength="255" />
+          <Property Name="Recoverable" Type="bit" Nullable="false" />
+          <Property Name="Expires" Type="datetime" />
+          <Property Name="Headers" Type="varchar(max)" Nullable="false" />
+          <Property Name="Body" Type="varbinary(max)" />
+          <Property Name="RowVersion" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="Subscription">
+          <Key>
+            <PropertyRef Name="SubscriberEndpoint" />
+            <PropertyRef Name="MessageType" />
+          </Key>
+          <Property Name="SubscriberEndpoint" Type="varchar" Nullable="false" MaxLength="450" />
+          <Property Name="MessageType" Type="varchar" Nullable="false" MaxLength="450" />
+          <Property Name="Version" Type="varchar" MaxLength="450" />
+          <Property Name="TypeName" Type="varchar" MaxLength="450" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="nservicebusModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="nservicebusEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="audits" EntityType="nservicebusModel.audit" />
+          <EntitySet Name="errors" EntityType="nservicebusModel.error" />
+          <EntitySet Name="MyPublishers" EntityType="nservicebusModel.MyPublisher" />
+          <EntitySet Name="MyPublisher_Retries" EntityType="nservicebusModel.MyPublisher_Retries" />
+          <EntitySet Name="MyPublisher_Timeouts" EntityType="nservicebusModel.MyPublisher_Timeouts" />
+          <EntitySet Name="MyPublisher_TimeoutsDispatcher" EntityType="nservicebusModel.MyPublisher_TimeoutsDispatcher" />
+          <EntitySet Name="Subscriber1" EntityType="nservicebusModel.Subscriber1" />
+          <EntitySet Name="Subscriber1_Retries" EntityType="nservicebusModel.Subscriber1_Retries" />
+          <EntitySet Name="Subscriber1_Timeouts" EntityType="nservicebusModel.Subscriber1_Timeouts" />
+          <EntitySet Name="Subscriber1_TimeoutsDispatcher" EntityType="nservicebusModel.Subscriber1_TimeoutsDispatcher" />
+          <EntitySet Name="Subscriber2" EntityType="nservicebusModel.Subscriber2" />
+          <EntitySet Name="Subscriber2_Retries" EntityType="nservicebusModel.Subscriber2_Retries" />
+          <EntitySet Name="Subscriber2_Timeouts" EntityType="nservicebusModel.Subscriber2_Timeouts" />
+          <EntitySet Name="Subscriber2_TimeoutsDispatcher" EntityType="nservicebusModel.Subscriber2_TimeoutsDispatcher" />
+          <EntitySet Name="Subscriptions" EntityType="nservicebusModel.Subscription" />
+        </EntityContainer>
+        <EntityType Name="audit">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Recoverable" />
+            <PropertyRef Name="Headers" />
+            <PropertyRef Name="RowVersion" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="CorrelationId" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="ReplyToAddress" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Recoverable" Type="Boolean" Nullable="false" />
+          <Property Name="Expires" Type="DateTime" Precision="3" />
+          <Property Name="Headers" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Body" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="RowVersion" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="error">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Recoverable" />
+            <PropertyRef Name="Headers" />
+            <PropertyRef Name="RowVersion" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="CorrelationId" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="ReplyToAddress" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Recoverable" Type="Boolean" Nullable="false" />
+          <Property Name="Expires" Type="DateTime" Precision="3" />
+          <Property Name="Headers" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Body" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="RowVersion" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="MyPublisher">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Recoverable" />
+            <PropertyRef Name="Headers" />
+            <PropertyRef Name="RowVersion" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="CorrelationId" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="ReplyToAddress" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Recoverable" Type="Boolean" Nullable="false" />
+          <Property Name="Expires" Type="DateTime" Precision="3" />
+          <Property Name="Headers" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Body" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="RowVersion" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="MyPublisher_Retries">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Recoverable" />
+            <PropertyRef Name="Headers" />
+            <PropertyRef Name="RowVersion" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="CorrelationId" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="ReplyToAddress" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Recoverable" Type="Boolean" Nullable="false" />
+          <Property Name="Expires" Type="DateTime" Precision="3" />
+          <Property Name="Headers" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Body" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="RowVersion" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="MyPublisher_Timeouts">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Recoverable" />
+            <PropertyRef Name="Headers" />
+            <PropertyRef Name="RowVersion" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="CorrelationId" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="ReplyToAddress" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Recoverable" Type="Boolean" Nullable="false" />
+          <Property Name="Expires" Type="DateTime" Precision="3" />
+          <Property Name="Headers" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Body" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="RowVersion" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="MyPublisher_TimeoutsDispatcher">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Recoverable" />
+            <PropertyRef Name="Headers" />
+            <PropertyRef Name="RowVersion" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="CorrelationId" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="ReplyToAddress" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Recoverable" Type="Boolean" Nullable="false" />
+          <Property Name="Expires" Type="DateTime" Precision="3" />
+          <Property Name="Headers" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Body" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="RowVersion" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="Subscriber1">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Recoverable" />
+            <PropertyRef Name="Headers" />
+            <PropertyRef Name="RowVersion" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="CorrelationId" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="ReplyToAddress" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Recoverable" Type="Boolean" Nullable="false" />
+          <Property Name="Expires" Type="DateTime" Precision="3" />
+          <Property Name="Headers" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Body" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="RowVersion" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="Subscriber1_Retries">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Recoverable" />
+            <PropertyRef Name="Headers" />
+            <PropertyRef Name="RowVersion" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="CorrelationId" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="ReplyToAddress" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Recoverable" Type="Boolean" Nullable="false" />
+          <Property Name="Expires" Type="DateTime" Precision="3" />
+          <Property Name="Headers" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Body" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="RowVersion" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="Subscriber1_Timeouts">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Recoverable" />
+            <PropertyRef Name="Headers" />
+            <PropertyRef Name="RowVersion" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="CorrelationId" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="ReplyToAddress" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Recoverable" Type="Boolean" Nullable="false" />
+          <Property Name="Expires" Type="DateTime" Precision="3" />
+          <Property Name="Headers" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Body" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="RowVersion" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="Subscriber1_TimeoutsDispatcher">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Recoverable" />
+            <PropertyRef Name="Headers" />
+            <PropertyRef Name="RowVersion" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="CorrelationId" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="ReplyToAddress" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Recoverable" Type="Boolean" Nullable="false" />
+          <Property Name="Expires" Type="DateTime" Precision="3" />
+          <Property Name="Headers" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Body" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="RowVersion" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="Subscriber2">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Recoverable" />
+            <PropertyRef Name="Headers" />
+            <PropertyRef Name="RowVersion" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="CorrelationId" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="ReplyToAddress" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Recoverable" Type="Boolean" Nullable="false" />
+          <Property Name="Expires" Type="DateTime" Precision="3" />
+          <Property Name="Headers" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Body" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="RowVersion" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="Subscriber2_Retries">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Recoverable" />
+            <PropertyRef Name="Headers" />
+            <PropertyRef Name="RowVersion" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="CorrelationId" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="ReplyToAddress" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Recoverable" Type="Boolean" Nullable="false" />
+          <Property Name="Expires" Type="DateTime" Precision="3" />
+          <Property Name="Headers" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Body" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="RowVersion" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="Subscriber2_Timeouts">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Recoverable" />
+            <PropertyRef Name="Headers" />
+            <PropertyRef Name="RowVersion" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="CorrelationId" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="ReplyToAddress" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Recoverable" Type="Boolean" Nullable="false" />
+          <Property Name="Expires" Type="DateTime" Precision="3" />
+          <Property Name="Headers" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Body" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="RowVersion" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="Subscriber2_TimeoutsDispatcher">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Recoverable" />
+            <PropertyRef Name="Headers" />
+            <PropertyRef Name="RowVersion" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="CorrelationId" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="ReplyToAddress" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Recoverable" Type="Boolean" Nullable="false" />
+          <Property Name="Expires" Type="DateTime" Precision="3" />
+          <Property Name="Headers" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Body" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="RowVersion" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="Subscription">
+          <Key>
+            <PropertyRef Name="SubscriberEndpoint" />
+            <PropertyRef Name="MessageType" />
+          </Key>
+          <Property Name="SubscriberEndpoint" Type="String" Nullable="false" MaxLength="450" Unicode="false" FixedLength="false" />
+          <Property Name="MessageType" Type="String" Nullable="false" MaxLength="450" Unicode="false" FixedLength="false" />
+          <Property Name="Version" Type="String" MaxLength="450" Unicode="false" FixedLength="false" />
+          <Property Name="TypeName" Type="String" MaxLength="450" Unicode="false" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="nservicebusModelStoreContainer" CdmEntityContainer="nservicebusEntities">
+          <EntitySetMapping Name="audits">
+            <EntityTypeMapping TypeName="nservicebusModel.audit">
+              <MappingFragment StoreEntitySet="audit">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="CorrelationId" ColumnName="CorrelationId" />
+                <ScalarProperty Name="ReplyToAddress" ColumnName="ReplyToAddress" />
+                <ScalarProperty Name="Recoverable" ColumnName="Recoverable" />
+                <ScalarProperty Name="Expires" ColumnName="Expires" />
+                <ScalarProperty Name="Headers" ColumnName="Headers" />
+                <ScalarProperty Name="Body" ColumnName="Body" />
+                <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="errors">
+            <EntityTypeMapping TypeName="nservicebusModel.error">
+              <MappingFragment StoreEntitySet="error">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="CorrelationId" ColumnName="CorrelationId" />
+                <ScalarProperty Name="ReplyToAddress" ColumnName="ReplyToAddress" />
+                <ScalarProperty Name="Recoverable" ColumnName="Recoverable" />
+                <ScalarProperty Name="Expires" ColumnName="Expires" />
+                <ScalarProperty Name="Headers" ColumnName="Headers" />
+                <ScalarProperty Name="Body" ColumnName="Body" />
+                <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MyPublishers">
+            <EntityTypeMapping TypeName="nservicebusModel.MyPublisher">
+              <MappingFragment StoreEntitySet="MyPublisher">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="CorrelationId" ColumnName="CorrelationId" />
+                <ScalarProperty Name="ReplyToAddress" ColumnName="ReplyToAddress" />
+                <ScalarProperty Name="Recoverable" ColumnName="Recoverable" />
+                <ScalarProperty Name="Expires" ColumnName="Expires" />
+                <ScalarProperty Name="Headers" ColumnName="Headers" />
+                <ScalarProperty Name="Body" ColumnName="Body" />
+                <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MyPublisher_Retries">
+            <EntityTypeMapping TypeName="nservicebusModel.MyPublisher_Retries">
+              <MappingFragment StoreEntitySet="MyPublisher_Retries">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="CorrelationId" ColumnName="CorrelationId" />
+                <ScalarProperty Name="ReplyToAddress" ColumnName="ReplyToAddress" />
+                <ScalarProperty Name="Recoverable" ColumnName="Recoverable" />
+                <ScalarProperty Name="Expires" ColumnName="Expires" />
+                <ScalarProperty Name="Headers" ColumnName="Headers" />
+                <ScalarProperty Name="Body" ColumnName="Body" />
+                <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MyPublisher_Timeouts">
+            <EntityTypeMapping TypeName="nservicebusModel.MyPublisher_Timeouts">
+              <MappingFragment StoreEntitySet="MyPublisher_Timeouts">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="CorrelationId" ColumnName="CorrelationId" />
+                <ScalarProperty Name="ReplyToAddress" ColumnName="ReplyToAddress" />
+                <ScalarProperty Name="Recoverable" ColumnName="Recoverable" />
+                <ScalarProperty Name="Expires" ColumnName="Expires" />
+                <ScalarProperty Name="Headers" ColumnName="Headers" />
+                <ScalarProperty Name="Body" ColumnName="Body" />
+                <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MyPublisher_TimeoutsDispatcher">
+            <EntityTypeMapping TypeName="nservicebusModel.MyPublisher_TimeoutsDispatcher">
+              <MappingFragment StoreEntitySet="MyPublisher_TimeoutsDispatcher">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="CorrelationId" ColumnName="CorrelationId" />
+                <ScalarProperty Name="ReplyToAddress" ColumnName="ReplyToAddress" />
+                <ScalarProperty Name="Recoverable" ColumnName="Recoverable" />
+                <ScalarProperty Name="Expires" ColumnName="Expires" />
+                <ScalarProperty Name="Headers" ColumnName="Headers" />
+                <ScalarProperty Name="Body" ColumnName="Body" />
+                <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Subscriber1">
+            <EntityTypeMapping TypeName="nservicebusModel.Subscriber1">
+              <MappingFragment StoreEntitySet="Subscriber1">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="CorrelationId" ColumnName="CorrelationId" />
+                <ScalarProperty Name="ReplyToAddress" ColumnName="ReplyToAddress" />
+                <ScalarProperty Name="Recoverable" ColumnName="Recoverable" />
+                <ScalarProperty Name="Expires" ColumnName="Expires" />
+                <ScalarProperty Name="Headers" ColumnName="Headers" />
+                <ScalarProperty Name="Body" ColumnName="Body" />
+                <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Subscriber1_Retries">
+            <EntityTypeMapping TypeName="nservicebusModel.Subscriber1_Retries">
+              <MappingFragment StoreEntitySet="Subscriber1_Retries">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="CorrelationId" ColumnName="CorrelationId" />
+                <ScalarProperty Name="ReplyToAddress" ColumnName="ReplyToAddress" />
+                <ScalarProperty Name="Recoverable" ColumnName="Recoverable" />
+                <ScalarProperty Name="Expires" ColumnName="Expires" />
+                <ScalarProperty Name="Headers" ColumnName="Headers" />
+                <ScalarProperty Name="Body" ColumnName="Body" />
+                <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Subscriber1_Timeouts">
+            <EntityTypeMapping TypeName="nservicebusModel.Subscriber1_Timeouts">
+              <MappingFragment StoreEntitySet="Subscriber1_Timeouts">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="CorrelationId" ColumnName="CorrelationId" />
+                <ScalarProperty Name="ReplyToAddress" ColumnName="ReplyToAddress" />
+                <ScalarProperty Name="Recoverable" ColumnName="Recoverable" />
+                <ScalarProperty Name="Expires" ColumnName="Expires" />
+                <ScalarProperty Name="Headers" ColumnName="Headers" />
+                <ScalarProperty Name="Body" ColumnName="Body" />
+                <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Subscriber1_TimeoutsDispatcher">
+            <EntityTypeMapping TypeName="nservicebusModel.Subscriber1_TimeoutsDispatcher">
+              <MappingFragment StoreEntitySet="Subscriber1_TimeoutsDispatcher">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="CorrelationId" ColumnName="CorrelationId" />
+                <ScalarProperty Name="ReplyToAddress" ColumnName="ReplyToAddress" />
+                <ScalarProperty Name="Recoverable" ColumnName="Recoverable" />
+                <ScalarProperty Name="Expires" ColumnName="Expires" />
+                <ScalarProperty Name="Headers" ColumnName="Headers" />
+                <ScalarProperty Name="Body" ColumnName="Body" />
+                <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Subscriber2">
+            <EntityTypeMapping TypeName="nservicebusModel.Subscriber2">
+              <MappingFragment StoreEntitySet="Subscriber2">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="CorrelationId" ColumnName="CorrelationId" />
+                <ScalarProperty Name="ReplyToAddress" ColumnName="ReplyToAddress" />
+                <ScalarProperty Name="Recoverable" ColumnName="Recoverable" />
+                <ScalarProperty Name="Expires" ColumnName="Expires" />
+                <ScalarProperty Name="Headers" ColumnName="Headers" />
+                <ScalarProperty Name="Body" ColumnName="Body" />
+                <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Subscriber2_Retries">
+            <EntityTypeMapping TypeName="nservicebusModel.Subscriber2_Retries">
+              <MappingFragment StoreEntitySet="Subscriber2_Retries">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="CorrelationId" ColumnName="CorrelationId" />
+                <ScalarProperty Name="ReplyToAddress" ColumnName="ReplyToAddress" />
+                <ScalarProperty Name="Recoverable" ColumnName="Recoverable" />
+                <ScalarProperty Name="Expires" ColumnName="Expires" />
+                <ScalarProperty Name="Headers" ColumnName="Headers" />
+                <ScalarProperty Name="Body" ColumnName="Body" />
+                <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Subscriber2_Timeouts">
+            <EntityTypeMapping TypeName="nservicebusModel.Subscriber2_Timeouts">
+              <MappingFragment StoreEntitySet="Subscriber2_Timeouts">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="CorrelationId" ColumnName="CorrelationId" />
+                <ScalarProperty Name="ReplyToAddress" ColumnName="ReplyToAddress" />
+                <ScalarProperty Name="Recoverable" ColumnName="Recoverable" />
+                <ScalarProperty Name="Expires" ColumnName="Expires" />
+                <ScalarProperty Name="Headers" ColumnName="Headers" />
+                <ScalarProperty Name="Body" ColumnName="Body" />
+                <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Subscriber2_TimeoutsDispatcher">
+            <EntityTypeMapping TypeName="nservicebusModel.Subscriber2_TimeoutsDispatcher">
+              <MappingFragment StoreEntitySet="Subscriber2_TimeoutsDispatcher">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="CorrelationId" ColumnName="CorrelationId" />
+                <ScalarProperty Name="ReplyToAddress" ColumnName="ReplyToAddress" />
+                <ScalarProperty Name="Recoverable" ColumnName="Recoverable" />
+                <ScalarProperty Name="Expires" ColumnName="Expires" />
+                <ScalarProperty Name="Headers" ColumnName="Headers" />
+                <ScalarProperty Name="Body" ColumnName="Body" />
+                <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Subscriptions">
+            <EntityTypeMapping TypeName="nservicebusModel.Subscription">
+              <MappingFragment StoreEntitySet="Subscription">
+                <ScalarProperty Name="SubscriberEndpoint" ColumnName="SubscriberEndpoint" />
+                <ScalarProperty Name="MessageType" ColumnName="MessageType" />
+                <ScalarProperty Name="Version" ColumnName="Version" />
+                <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="nservicebusModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="nservicebusEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="audits" EntityType="nservicebusModel.audit" />
+    <EntitySet Name="errors" EntityType="nservicebusModel.error" />
+    <EntitySet Name="MyPublishers" EntityType="nservicebusModel.MyPublisher" />
+    <EntitySet Name="MyPublisher_Retries" EntityType="nservicebusModel.MyPublisher_Retries" />
+    <EntitySet Name="MyPublisher_Timeouts" EntityType="nservicebusModel.MyPublisher_Timeouts" />
+    <EntitySet Name="MyPublisher_TimeoutsDispatcher" EntityType="nservicebusModel.MyPublisher_TimeoutsDispatcher" />
+    <EntitySet Name="Subscriber1" EntityType="nservicebusModel.Subscriber1" />
+    <EntitySet Name="Subscriber1_Retries" EntityType="nservicebusModel.Subscriber1_Retries" />
+    <EntitySet Name="Subscriber1_Timeouts" EntityType="nservicebusModel.Subscriber1_Timeouts" />
+    <EntitySet Name="Subscriber1_TimeoutsDispatcher" EntityType="nservicebusModel.Subscriber1_TimeoutsDispatcher" />
+    <EntitySet Name="Subscriber2" EntityType="nservicebusModel.Subscriber2" />
+    <EntitySet Name="Subscriber2_Retries" EntityType="nservicebusModel.Subscriber2_Retries" />
+    <EntitySet Name="Subscriber2_Timeouts" EntityType="nservicebusModel.Subscriber2_Timeouts" />
+    <EntitySet Name="Subscriber2_TimeoutsDispatcher" EntityType="nservicebusModel.Subscriber2_TimeoutsDispatcher" />
+    <EntitySet Name="Subscriptions" EntityType="nservicebusModel.Subscription" />
+  </EntityContainer>
+  <EntityType Name="audit">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Recoverable" />
+      <PropertyRef Name="Headers" />
+      <PropertyRef Name="RowVersion" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="CorrelationId" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="ReplyToAddress" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="Recoverable" Type="Boolean" Nullable="false" />
+    <Property Name="Expires" Type="DateTime" Precision="3" />
+    <Property Name="Headers" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Body" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="RowVersion" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="error">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Recoverable" />
+      <PropertyRef Name="Headers" />
+      <PropertyRef Name="RowVersion" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="CorrelationId" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="ReplyToAddress" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="Recoverable" Type="Boolean" Nullable="false" />
+    <Property Name="Expires" Type="DateTime" Precision="3" />
+    <Property Name="Headers" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Body" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="RowVersion" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="MyPublisher">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Recoverable" />
+      <PropertyRef Name="Headers" />
+      <PropertyRef Name="RowVersion" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="CorrelationId" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="ReplyToAddress" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="Recoverable" Type="Boolean" Nullable="false" />
+    <Property Name="Expires" Type="DateTime" Precision="3" />
+    <Property Name="Headers" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Body" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="RowVersion" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="MyPublisher_Retries">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Recoverable" />
+      <PropertyRef Name="Headers" />
+      <PropertyRef Name="RowVersion" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="CorrelationId" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="ReplyToAddress" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="Recoverable" Type="Boolean" Nullable="false" />
+    <Property Name="Expires" Type="DateTime" Precision="3" />
+    <Property Name="Headers" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Body" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="RowVersion" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="MyPublisher_Timeouts">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Recoverable" />
+      <PropertyRef Name="Headers" />
+      <PropertyRef Name="RowVersion" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="CorrelationId" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="ReplyToAddress" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="Recoverable" Type="Boolean" Nullable="false" />
+    <Property Name="Expires" Type="DateTime" Precision="3" />
+    <Property Name="Headers" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Body" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="RowVersion" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="MyPublisher_TimeoutsDispatcher">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Recoverable" />
+      <PropertyRef Name="Headers" />
+      <PropertyRef Name="RowVersion" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="CorrelationId" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="ReplyToAddress" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="Recoverable" Type="Boolean" Nullable="false" />
+    <Property Name="Expires" Type="DateTime" Precision="3" />
+    <Property Name="Headers" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Body" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="RowVersion" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Subscriber1">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Recoverable" />
+      <PropertyRef Name="Headers" />
+      <PropertyRef Name="RowVersion" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="CorrelationId" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="ReplyToAddress" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="Recoverable" Type="Boolean" Nullable="false" />
+    <Property Name="Expires" Type="DateTime" Precision="3" />
+    <Property Name="Headers" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Body" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="RowVersion" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Subscriber1_Retries">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Recoverable" />
+      <PropertyRef Name="Headers" />
+      <PropertyRef Name="RowVersion" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="CorrelationId" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="ReplyToAddress" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="Recoverable" Type="Boolean" Nullable="false" />
+    <Property Name="Expires" Type="DateTime" Precision="3" />
+    <Property Name="Headers" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Body" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="RowVersion" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Subscriber1_Timeouts">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Recoverable" />
+      <PropertyRef Name="Headers" />
+      <PropertyRef Name="RowVersion" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="CorrelationId" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="ReplyToAddress" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="Recoverable" Type="Boolean" Nullable="false" />
+    <Property Name="Expires" Type="DateTime" Precision="3" />
+    <Property Name="Headers" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Body" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="RowVersion" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Subscriber1_TimeoutsDispatcher">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Recoverable" />
+      <PropertyRef Name="Headers" />
+      <PropertyRef Name="RowVersion" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="CorrelationId" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="ReplyToAddress" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="Recoverable" Type="Boolean" Nullable="false" />
+    <Property Name="Expires" Type="DateTime" Precision="3" />
+    <Property Name="Headers" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Body" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="RowVersion" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Subscriber2">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Recoverable" />
+      <PropertyRef Name="Headers" />
+      <PropertyRef Name="RowVersion" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="CorrelationId" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="ReplyToAddress" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="Recoverable" Type="Boolean" Nullable="false" />
+    <Property Name="Expires" Type="DateTime" Precision="3" />
+    <Property Name="Headers" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Body" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="RowVersion" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Subscriber2_Retries">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Recoverable" />
+      <PropertyRef Name="Headers" />
+      <PropertyRef Name="RowVersion" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="CorrelationId" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="ReplyToAddress" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="Recoverable" Type="Boolean" Nullable="false" />
+    <Property Name="Expires" Type="DateTime" Precision="3" />
+    <Property Name="Headers" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Body" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="RowVersion" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Subscriber2_Timeouts">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Recoverable" />
+      <PropertyRef Name="Headers" />
+      <PropertyRef Name="RowVersion" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="CorrelationId" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="ReplyToAddress" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="Recoverable" Type="Boolean" Nullable="false" />
+    <Property Name="Expires" Type="DateTime" Precision="3" />
+    <Property Name="Headers" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Body" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="RowVersion" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Subscriber2_TimeoutsDispatcher">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Recoverable" />
+      <PropertyRef Name="Headers" />
+      <PropertyRef Name="RowVersion" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="CorrelationId" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="ReplyToAddress" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="Recoverable" Type="Boolean" Nullable="false" />
+    <Property Name="Expires" Type="DateTime" Precision="3" />
+    <Property Name="Headers" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Body" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="RowVersion" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Subscription">
+    <Key>
+      <PropertyRef Name="SubscriberEndpoint" />
+      <PropertyRef Name="MessageType" />
+    </Key>
+    <Property Name="SubscriberEndpoint" Type="String" Nullable="false" MaxLength="450" Unicode="false" FixedLength="false" />
+    <Property Name="MessageType" Type="String" Nullable="false" MaxLength="450" Unicode="false" FixedLength="false" />
+    <Property Name="Version" Type="String" MaxLength="450" Unicode="false" FixedLength="false" />
+    <Property Name="TypeName" Type="String" MaxLength="450" Unicode="false" FixedLength="false" />
+  </EntityType>
+</Schema>

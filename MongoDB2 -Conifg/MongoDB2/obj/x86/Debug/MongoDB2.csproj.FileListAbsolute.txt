@@ -1,0 +1,52 @@
+F:\3816EN_CHap08\MongoDB\MongoDB2\MongoDB2\bin\Debug\MongoDB2.exe.config
+F:\3816EN_CHap08\MongoDB\MongoDB2\MongoDB2\bin\Debug\MongoDB2.exe
+F:\3816EN_CHap08\MongoDB\MongoDB2\MongoDB2\bin\Debug\MongoDB2.pdb
+F:\3816EN_CHap08\MongoDB\MongoDB2\MongoDB2\bin\Debug\MongoDB.Bson.dll
+F:\3816EN_CHap08\MongoDB\MongoDB2\MongoDB2\bin\Debug\MongoDB.Driver.dll
+F:\3816EN_CHap08\MongoDB\MongoDB2\MongoDB2\bin\Debug\MongoDB.Bson.xml
+F:\3816EN_CHap08\MongoDB\MongoDB2\MongoDB2\bin\Debug\MongoDB.Driver.xml
+F:\3816EN_CHap08\MongoDB\MongoDB2\MongoDB2\obj\x86\Debug\MongoDB2.Form1.resources
+F:\3816EN_CHap08\MongoDB\MongoDB2\MongoDB2\obj\x86\Debug\MongoDB2.Properties.Resources.resources
+F:\3816EN_CHap08\MongoDB\MongoDB2\MongoDB2\obj\x86\Debug\MongoDB2.csproj.GenerateResource.Cache
+F:\3816EN_CHap08\MongoDB\MongoDB2\MongoDB2\obj\x86\Debug\MongoDB2.exe
+F:\3816EN_CHap08\MongoDB\MongoDB2\MongoDB2\obj\x86\Debug\MongoDB2.pdb
+F:\3816EN_CHap08\MongoDB\MongoDB2 -Conifg\MongoDB2\bin\Debug\MongoDB2.exe.config
+F:\3816EN_CHap08\MongoDB\MongoDB2 -Conifg\MongoDB2\obj\x86\Debug\MongoDB2.exe
+F:\3816EN_CHap08\MongoDB\MongoDB2 -Conifg\MongoDB2\obj\x86\Debug\MongoDB2.pdb
+F:\3816EN_CHap08\MongoDB\MongoDB2 -Conifg\MongoDB2\bin\Debug\MongoDB2.exe
+F:\3816EN_CHap08\MongoDB\MongoDB2 -Conifg\MongoDB2\bin\Debug\MongoDB2.pdb
+F:\3816EN_CHap08\MongoDB\MongoDB2 -Conifg\MongoDB2\bin\Debug\MongoDB.Bson.dll
+F:\3816EN_CHap08\MongoDB\MongoDB2 -Conifg\MongoDB2\bin\Debug\MongoDB.Driver.dll
+F:\3816EN_CHap08\MongoDB\MongoDB2 -Conifg\MongoDB2\bin\Debug\NServiceBus.Core.dll
+F:\3816EN_CHap08\MongoDB\MongoDB2 -Conifg\MongoDB2\bin\Debug\NServiceBus.dll
+F:\3816EN_CHap08\MongoDB\MongoDB2 -Conifg\MongoDB2\bin\Debug\MongoDB.Bson.xml
+F:\3816EN_CHap08\MongoDB\MongoDB2 -Conifg\MongoDB2\bin\Debug\MongoDB.Driver.xml
+F:\3816EN_CHap08\MongoDB\MongoDB2 -Conifg\MongoDB2\bin\Debug\NServiceBus.pdb
+F:\3816EN_CHap08\MongoDB\MongoDB2 -Conifg\MongoDB2\bin\Debug\NServiceBus.xml
+F:\3816EN_CHap08\MongoDB\MongoDB2 -Conifg\MongoDB2\bin\Debug\NServiceBus.Core.pdb
+F:\3816EN_CHap08\MongoDB\MongoDB2 -Conifg\MongoDB2\bin\Debug\NServiceBus.Core.xml
+F:\3816EN_CHap08\MongoDB\MongoDB2 -Conifg\MongoDB2\obj\x86\Debug\MongoDB2.Form1.resources
+F:\3816EN_CHap08\MongoDB\MongoDB2 -Conifg\MongoDB2\obj\x86\Debug\MongoDB2.Properties.Resources.resources
+F:\3816EN_CHap08\MongoDB\MongoDB2 -Conifg\MongoDB2\obj\x86\Debug\MongoDB2.csproj.GenerateResource.Cache
+F:\OldChapters\3816EN_CHap08\MongoDB\MongoDB2 -Conifg\MongoDB2\bin\Debug\MongoDB2.exe.config
+F:\OldChapters\3816EN_CHap08\MongoDB\MongoDB2 -Conifg\MongoDB2\obj\x86\Debug\MongoDB2.exe
+F:\OldChapters\3816EN_CHap08\MongoDB\MongoDB2 -Conifg\MongoDB2\obj\x86\Debug\MongoDB2.pdb
+F:\OldChapters\3816EN_CHap08\MongoDB\MongoDB2 -Conifg\MongoDB2\bin\Debug\MongoDB2.exe
+F:\OldChapters\3816EN_CHap08\MongoDB\MongoDB2 -Conifg\MongoDB2\bin\Debug\MongoDB2.pdb
+F:\OldChapters\3816EN_CHap08\MongoDB\MongoDB2 -Conifg\MongoDB2\bin\Debug\MongoDB.Bson.dll
+F:\OldChapters\3816EN_CHap08\MongoDB\MongoDB2 -Conifg\MongoDB2\bin\Debug\MongoDB.Driver.dll
+F:\OldChapters\3816EN_CHap08\MongoDB\MongoDB2 -Conifg\MongoDB2\bin\Debug\NServiceBus.Core.dll
+F:\OldChapters\3816EN_CHap08\MongoDB\MongoDB2 -Conifg\MongoDB2\bin\Debug\NServiceBus.dll
+F:\OldChapters\3816EN_CHap08\MongoDB\MongoDB2 -Conifg\MongoDB2\bin\Debug\MongoDB.Bson.xml
+F:\OldChapters\3816EN_CHap08\MongoDB\MongoDB2 -Conifg\MongoDB2\bin\Debug\MongoDB.Driver.xml
+F:\OldChapters\3816EN_CHap08\MongoDB\MongoDB2 -Conifg\MongoDB2\bin\Debug\NServiceBus.pdb
+F:\OldChapters\3816EN_CHap08\MongoDB\MongoDB2 -Conifg\MongoDB2\bin\Debug\NServiceBus.xml
+F:\OldChapters\3816EN_CHap08\MongoDB\MongoDB2 -Conifg\MongoDB2\bin\Debug\NServiceBus.Core.pdb
+F:\OldChapters\3816EN_CHap08\MongoDB\MongoDB2 -Conifg\MongoDB2\bin\Debug\NServiceBus.Core.xml
+F:\OldChapters\3816EN_CHap08\MongoDB\MongoDB2 -Conifg\MongoDB2\obj\x86\Debug\MongoDB2.csprojResolveAssemblyReference.cache
+F:\OldChapters\3816EN_CHap08\MongoDB\MongoDB2 -Conifg\MongoDB2\obj\x86\Debug\MongoDB2.Form1.resources
+F:\OldChapters\3816EN_CHap08\MongoDB\MongoDB2 -Conifg\MongoDB2\obj\x86\Debug\MongoDB2.Properties.Resources.resources
+F:\OldChapters\3816EN_CHap08\MongoDB\MongoDB2 -Conifg\MongoDB2\obj\x86\Debug\MongoDB2.csproj.GenerateResource.Cache
+C:\Code_August\3816_Chap07\MongoDB2 -Conifg\MongoDB2\bin\Debug\MongoDB2.exe.config
+C:\Code_August\3816_Chap07\MongoDB2 -Conifg\MongoDB2\obj\x86\Debug\MongoDB2.exe
+C:\Code_August\3816_Chap07\MongoDB2 -Conifg\MongoDB2\obj\x86\Debug\MongoDB2.pdb

@@ -1,0 +1,38 @@
+﻿@model IEnumerable<MVCApp.Models.Subscriber2Ext>
+@{
+    ViewBag.Title = "Subscriber2";
+}
+
+<h2>Subscriber1</h2>
+<script type="text/javascript">
+
+
+
+
+
+    $(document).ready(function () {
+
+        var modelData = @Html.Raw(Json.Encode(Model))
+        $("#grid").kendoGrid({
+
+            pageable: true
+            , sortable: true
+            , silectable: true
+            , selectable: true
+            , columns: [
+            { field: "subscriber.Id", title: "Id" }
+         , { field: "subscriber.ReplyToAddress", title: "ReplyToAddress" }
+         , { field: "subscriber.Headers", title: "Headers" }
+         , { field: "reader", title: "Body" }
+            ]
+             , dataSource: { pageSize: 10, data: modelData }
+
+        });
+    });
+
+
+
+</script>
+
+<table id="grid">
+</table>

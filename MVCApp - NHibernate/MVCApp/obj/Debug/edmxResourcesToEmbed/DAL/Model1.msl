@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="nservicebusModelStoreContainer" CdmEntityContainer="nservicebusEntities">
+    <EntitySetMapping Name="audits">
+      <EntityTypeMapping TypeName="nservicebusModel.audit">
+        <MappingFragment StoreEntitySet="audit">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CorrelationId" ColumnName="CorrelationId" />
+          <ScalarProperty Name="ReplyToAddress" ColumnName="ReplyToAddress" />
+          <ScalarProperty Name="Recoverable" ColumnName="Recoverable" />
+          <ScalarProperty Name="Expires" ColumnName="Expires" />
+          <ScalarProperty Name="Headers" ColumnName="Headers" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="errors">
+      <EntityTypeMapping TypeName="nservicebusModel.error">
+        <MappingFragment StoreEntitySet="error">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CorrelationId" ColumnName="CorrelationId" />
+          <ScalarProperty Name="ReplyToAddress" ColumnName="ReplyToAddress" />
+          <ScalarProperty Name="Recoverable" ColumnName="Recoverable" />
+          <ScalarProperty Name="Expires" ColumnName="Expires" />
+          <ScalarProperty Name="Headers" ColumnName="Headers" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MyPublishers">
+      <EntityTypeMapping TypeName="nservicebusModel.MyPublisher">
+        <MappingFragment StoreEntitySet="MyPublisher">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CorrelationId" ColumnName="CorrelationId" />
+          <ScalarProperty Name="ReplyToAddress" ColumnName="ReplyToAddress" />
+          <ScalarProperty Name="Recoverable" ColumnName="Recoverable" />
+          <ScalarProperty Name="Expires" ColumnName="Expires" />
+          <ScalarProperty Name="Headers" ColumnName="Headers" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MyPublisher_Retries">
+      <EntityTypeMapping TypeName="nservicebusModel.MyPublisher_Retries">
+        <MappingFragment StoreEntitySet="MyPublisher_Retries">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CorrelationId" ColumnName="CorrelationId" />
+          <ScalarProperty Name="ReplyToAddress" ColumnName="ReplyToAddress" />
+          <ScalarProperty Name="Recoverable" ColumnName="Recoverable" />
+          <ScalarProperty Name="Expires" ColumnName="Expires" />
+          <ScalarProperty Name="Headers" ColumnName="Headers" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MyPublisher_Timeouts">
+      <EntityTypeMapping TypeName="nservicebusModel.MyPublisher_Timeouts">
+        <MappingFragment StoreEntitySet="MyPublisher_Timeouts">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CorrelationId" ColumnName="CorrelationId" />
+          <ScalarProperty Name="ReplyToAddress" ColumnName="ReplyToAddress" />
+          <ScalarProperty Name="Recoverable" ColumnName="Recoverable" />
+          <ScalarProperty Name="Expires" ColumnName="Expires" />
+          <ScalarProperty Name="Headers" ColumnName="Headers" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MyPublisher_TimeoutsDispatcher">
+      <EntityTypeMapping TypeName="nservicebusModel.MyPublisher_TimeoutsDispatcher">
+        <MappingFragment StoreEntitySet="MyPublisher_TimeoutsDispatcher">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CorrelationId" ColumnName="CorrelationId" />
+          <ScalarProperty Name="ReplyToAddress" ColumnName="ReplyToAddress" />
+          <ScalarProperty Name="Recoverable" ColumnName="Recoverable" />
+          <ScalarProperty Name="Expires" ColumnName="Expires" />
+          <ScalarProperty Name="Headers" ColumnName="Headers" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Subscriber1">
+      <EntityTypeMapping TypeName="nservicebusModel.Subscriber1">
+        <MappingFragment StoreEntitySet="Subscriber1">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CorrelationId" ColumnName="CorrelationId" />
+          <ScalarProperty Name="ReplyToAddress" ColumnName="ReplyToAddress" />
+          <ScalarProperty Name="Recoverable" ColumnName="Recoverable" />
+          <ScalarProperty Name="Expires" ColumnName="Expires" />
+          <ScalarProperty Name="Headers" ColumnName="Headers" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Subscriber1_Retries">
+      <EntityTypeMapping TypeName="nservicebusModel.Subscriber1_Retries">
+        <MappingFragment StoreEntitySet="Subscriber1_Retries">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CorrelationId" ColumnName="CorrelationId" />
+          <ScalarProperty Name="ReplyToAddress" ColumnName="ReplyToAddress" />
+          <ScalarProperty Name="Recoverable" ColumnName="Recoverable" />
+          <ScalarProperty Name="Expires" ColumnName="Expires" />
+          <ScalarProperty Name="Headers" ColumnName="Headers" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Subscriber1_Timeouts">
+      <EntityTypeMapping TypeName="nservicebusModel.Subscriber1_Timeouts">
+        <MappingFragment StoreEntitySet="Subscriber1_Timeouts">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CorrelationId" ColumnName="CorrelationId" />
+          <ScalarProperty Name="ReplyToAddress" ColumnName="ReplyToAddress" />
+          <ScalarProperty Name="Recoverable" ColumnName="Recoverable" />
+          <ScalarProperty Name="Expires" ColumnName="Expires" />
+          <ScalarProperty Name="Headers" ColumnName="Headers" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Subscriber1_TimeoutsDispatcher">
+      <EntityTypeMapping TypeName="nservicebusModel.Subscriber1_TimeoutsDispatcher">
+        <MappingFragment StoreEntitySet="Subscriber1_TimeoutsDispatcher">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CorrelationId" ColumnName="CorrelationId" />
+          <ScalarProperty Name="ReplyToAddress" ColumnName="ReplyToAddress" />
+          <ScalarProperty Name="Recoverable" ColumnName="Recoverable" />
+          <ScalarProperty Name="Expires" ColumnName="Expires" />
+          <ScalarProperty Name="Headers" ColumnName="Headers" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Subscriber2">
+      <EntityTypeMapping TypeName="nservicebusModel.Subscriber2">
+        <MappingFragment StoreEntitySet="Subscriber2">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CorrelationId" ColumnName="CorrelationId" />
+          <ScalarProperty Name="ReplyToAddress" ColumnName="ReplyToAddress" />
+          <ScalarProperty Name="Recoverable" ColumnName="Recoverable" />
+          <ScalarProperty Name="Expires" ColumnName="Expires" />
+          <ScalarProperty Name="Headers" ColumnName="Headers" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Subscriber2_Retries">
+      <EntityTypeMapping TypeName="nservicebusModel.Subscriber2_Retries">
+        <MappingFragment StoreEntitySet="Subscriber2_Retries">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CorrelationId" ColumnName="CorrelationId" />
+          <ScalarProperty Name="ReplyToAddress" ColumnName="ReplyToAddress" />
+          <ScalarProperty Name="Recoverable" ColumnName="Recoverable" />
+          <ScalarProperty Name="Expires" ColumnName="Expires" />
+          <ScalarProperty Name="Headers" ColumnName="Headers" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Subscriber2_Timeouts">
+      <EntityTypeMapping TypeName="nservicebusModel.Subscriber2_Timeouts">
+        <MappingFragment StoreEntitySet="Subscriber2_Timeouts">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CorrelationId" ColumnName="CorrelationId" />
+          <ScalarProperty Name="ReplyToAddress" ColumnName="ReplyToAddress" />
+          <ScalarProperty Name="Recoverable" ColumnName="Recoverable" />
+          <ScalarProperty Name="Expires" ColumnName="Expires" />
+          <ScalarProperty Name="Headers" ColumnName="Headers" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Subscriber2_TimeoutsDispatcher">
+      <EntityTypeMapping TypeName="nservicebusModel.Subscriber2_TimeoutsDispatcher">
+        <MappingFragment StoreEntitySet="Subscriber2_TimeoutsDispatcher">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CorrelationId" ColumnName="CorrelationId" />
+          <ScalarProperty Name="ReplyToAddress" ColumnName="ReplyToAddress" />
+          <ScalarProperty Name="Recoverable" ColumnName="Recoverable" />
+          <ScalarProperty Name="Expires" ColumnName="Expires" />
+          <ScalarProperty Name="Headers" ColumnName="Headers" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Subscriptions">
+      <EntityTypeMapping TypeName="nservicebusModel.Subscription">
+        <MappingFragment StoreEntitySet="Subscription">
+          <ScalarProperty Name="SubscriberEndpoint" ColumnName="SubscriberEndpoint" />
+          <ScalarProperty Name="MessageType" ColumnName="MessageType" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

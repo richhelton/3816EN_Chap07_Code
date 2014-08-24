@@ -1,0 +1,34 @@
+﻿@model IEnumerable<MVCApp.Models.AuditExt>
+@{
+    ViewBag.Title = "Audit";
+}
+
+<h2>Audit</h2>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        var modelData = @Html.Raw(Json.Encode(Model))
+        $("#grid").kendoGrid({
+            
+              pageable: true
+            , sortable: true
+            , silectable: true
+            , selectable: true
+            , columns: [
+            { field: "audit.Id", title: "Id" }
+         , { field: "audit.ReplyToAddress", title: "ReplyToAddress" }
+         , { field: "audit.Headers", title: "Headers" }
+         , { field: "reader", title: "Body" }
+            ]
+             , dataSource: { pageSize: 10, data:modelData }
+
+        });
+    });
+
+
+ 
+</script>
+
+<table id="grid">
+</table>

@@ -1,0 +1,129 @@
+F:\3816EN_Chap07\PubSub-SQL\Subscriber2\obj\Debug\Subscriber2.csprojResolveAssemblyReference.cache
+F:\3816EN_Chap07\PubSub-SQL\Subscriber2\bin\Debug\Subscriber2.dll.config
+F:\3816EN_Chap07\PubSub-SQL\Subscriber2\bin\Debug\Subscriber2.dll
+F:\3816EN_Chap07\PubSub-SQL\Subscriber2\bin\Debug\Subscriber2.pdb
+F:\3816EN_Chap07\PubSub-SQL\Subscriber2\bin\Debug\Castle.Core.dll
+F:\3816EN_Chap07\PubSub-SQL\Subscriber2\bin\Debug\Castle.Windsor.dll
+F:\3816EN_Chap07\PubSub-SQL\Subscriber2\bin\Debug\log4net.dll
+F:\3816EN_Chap07\PubSub-SQL\Subscriber2\bin\Debug\MyMessages.dll
+F:\3816EN_Chap07\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.Core.dll
+F:\3816EN_Chap07\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.dll
+F:\3816EN_Chap07\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.Host.exe
+F:\3816EN_Chap07\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.ObjectBuilder.CastleWindsor.dll
+F:\3816EN_Chap07\PubSub-SQL\Subscriber2\bin\Debug\MyMessages.pdb
+F:\3816EN_Chap07\PubSub-SQL\Subscriber2\bin\Debug\Castle.Core.xml
+F:\3816EN_Chap07\PubSub-SQL\Subscriber2\bin\Debug\Castle.Windsor.xml
+F:\3816EN_Chap07\PubSub-SQL\Subscriber2\bin\Debug\log4net.xml
+F:\3816EN_Chap07\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.pdb
+F:\3816EN_Chap07\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.xml
+F:\3816EN_Chap07\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.Core.pdb
+F:\3816EN_Chap07\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.Core.xml
+F:\3816EN_Chap07\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.Host.pdb
+F:\3816EN_Chap07\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.Host.xml
+F:\3816EN_Chap07\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.ObjectBuilder.CastleWindsor.pdb
+F:\3816EN_Chap07\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.ObjectBuilder.CastleWindsor.xml
+F:\3816EN_Chap07\PubSub-SQL\Subscriber2\obj\Debug\Subscriber2.dll
+F:\3816EN_Chap07\PubSub-SQL\Subscriber2\obj\Debug\Subscriber2.pdb
+F:\3816EN_Chap07\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.Transports.SQLServer.dll
+F:\3816EN_Chap07\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.Transports.SQLServer.pdb
+F:\3816EN_Chap07\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.Transports.SQLServer.xml
+F:\3816EN_Chap07\TESTING\PubSub-SQL\Subscriber2\bin\Debug\Subscriber2.dll.config
+F:\3816EN_Chap07\TESTING\PubSub-SQL\Subscriber2\bin\Debug\Subscriber2.dll
+F:\3816EN_Chap07\TESTING\PubSub-SQL\Subscriber2\bin\Debug\Subscriber2.pdb
+F:\3816EN_Chap07\TESTING\PubSub-SQL\Subscriber2\bin\Debug\Castle.Core.dll
+F:\3816EN_Chap07\TESTING\PubSub-SQL\Subscriber2\bin\Debug\Castle.Windsor.dll
+F:\3816EN_Chap07\TESTING\PubSub-SQL\Subscriber2\bin\Debug\log4net.dll
+F:\3816EN_Chap07\TESTING\PubSub-SQL\Subscriber2\bin\Debug\MyMessages.dll
+F:\3816EN_Chap07\TESTING\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.Core.dll
+F:\3816EN_Chap07\TESTING\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.dll
+F:\3816EN_Chap07\TESTING\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.Host.exe
+F:\3816EN_Chap07\TESTING\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.ObjectBuilder.CastleWindsor.dll
+F:\3816EN_Chap07\TESTING\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.Transports.SQLServer.dll
+F:\3816EN_Chap07\TESTING\PubSub-SQL\Subscriber2\bin\Debug\MyMessages.pdb
+F:\3816EN_Chap07\TESTING\PubSub-SQL\Subscriber2\bin\Debug\Castle.Core.xml
+F:\3816EN_Chap07\TESTING\PubSub-SQL\Subscriber2\bin\Debug\Castle.Windsor.xml
+F:\3816EN_Chap07\TESTING\PubSub-SQL\Subscriber2\bin\Debug\log4net.xml
+F:\3816EN_Chap07\TESTING\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.pdb
+F:\3816EN_Chap07\TESTING\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.xml
+F:\3816EN_Chap07\TESTING\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.Core.pdb
+F:\3816EN_Chap07\TESTING\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.Core.xml
+F:\3816EN_Chap07\TESTING\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.Host.pdb
+F:\3816EN_Chap07\TESTING\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.Host.xml
+F:\3816EN_Chap07\TESTING\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.ObjectBuilder.CastleWindsor.pdb
+F:\3816EN_Chap07\TESTING\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.ObjectBuilder.CastleWindsor.xml
+F:\3816EN_Chap07\TESTING\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.Transports.SQLServer.pdb
+F:\3816EN_Chap07\TESTING\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.Transports.SQLServer.xml
+F:\3816EN_Chap07\TESTING\PubSub-SQL\Subscriber2\obj\Debug\Subscriber2.dll
+F:\3816EN_Chap07\TESTING\PubSub-SQL\Subscriber2\obj\Debug\Subscriber2.pdb
+F:\3816EN_Chap07\SAVE2\PubSub-SQL - Temp\Subscriber2\bin\Debug\Subscriber2.dll.config
+F:\3816EN_Chap07\SAVE2\PubSub-SQL - Temp\Subscriber2\bin\Debug\Subscriber2.dll
+F:\3816EN_Chap07\SAVE2\PubSub-SQL - Temp\Subscriber2\bin\Debug\Subscriber2.pdb
+F:\3816EN_Chap07\SAVE2\PubSub-SQL - Temp\Subscriber2\bin\Debug\Castle.Core.dll
+F:\3816EN_Chap07\SAVE2\PubSub-SQL - Temp\Subscriber2\bin\Debug\Castle.Windsor.dll
+F:\3816EN_Chap07\SAVE2\PubSub-SQL - Temp\Subscriber2\bin\Debug\Iesi.Collections.dll
+F:\3816EN_Chap07\SAVE2\PubSub-SQL - Temp\Subscriber2\bin\Debug\log4net.dll
+F:\3816EN_Chap07\SAVE2\PubSub-SQL - Temp\Subscriber2\bin\Debug\MyMessages.dll
+F:\3816EN_Chap07\SAVE2\PubSub-SQL - Temp\Subscriber2\bin\Debug\NHibernate.dll
+F:\3816EN_Chap07\SAVE2\PubSub-SQL - Temp\Subscriber2\bin\Debug\NServiceBus.Core.dll
+F:\3816EN_Chap07\SAVE2\PubSub-SQL - Temp\Subscriber2\bin\Debug\NServiceBus.dll
+F:\3816EN_Chap07\SAVE2\PubSub-SQL - Temp\Subscriber2\bin\Debug\NServiceBus.Host.exe
+F:\3816EN_Chap07\SAVE2\PubSub-SQL - Temp\Subscriber2\bin\Debug\NServiceBus.NHibernate.dll
+F:\3816EN_Chap07\SAVE2\PubSub-SQL - Temp\Subscriber2\bin\Debug\NServiceBus.ObjectBuilder.CastleWindsor.dll
+F:\3816EN_Chap07\SAVE2\PubSub-SQL - Temp\Subscriber2\bin\Debug\NServiceBus.Transports.SQLServer.dll
+F:\3816EN_Chap07\SAVE2\PubSub-SQL - Temp\Subscriber2\bin\Debug\MyMessages.pdb
+F:\3816EN_Chap07\SAVE2\PubSub-SQL - Temp\Subscriber2\bin\Debug\Castle.Core.xml
+F:\3816EN_Chap07\SAVE2\PubSub-SQL - Temp\Subscriber2\bin\Debug\Castle.Windsor.xml
+F:\3816EN_Chap07\SAVE2\PubSub-SQL - Temp\Subscriber2\bin\Debug\Iesi.Collections.xml
+F:\3816EN_Chap07\SAVE2\PubSub-SQL - Temp\Subscriber2\bin\Debug\log4net.xml
+F:\3816EN_Chap07\SAVE2\PubSub-SQL - Temp\Subscriber2\bin\Debug\NHibernate.xml
+F:\3816EN_Chap07\SAVE2\PubSub-SQL - Temp\Subscriber2\bin\Debug\NServiceBus.pdb
+F:\3816EN_Chap07\SAVE2\PubSub-SQL - Temp\Subscriber2\bin\Debug\NServiceBus.xml
+F:\3816EN_Chap07\SAVE2\PubSub-SQL - Temp\Subscriber2\bin\Debug\NServiceBus.Core.pdb
+F:\3816EN_Chap07\SAVE2\PubSub-SQL - Temp\Subscriber2\bin\Debug\NServiceBus.Core.xml
+F:\3816EN_Chap07\SAVE2\PubSub-SQL - Temp\Subscriber2\bin\Debug\NServiceBus.Host.pdb
+F:\3816EN_Chap07\SAVE2\PubSub-SQL - Temp\Subscriber2\bin\Debug\NServiceBus.Host.xml
+F:\3816EN_Chap07\SAVE2\PubSub-SQL - Temp\Subscriber2\bin\Debug\NServiceBus.NHibernate.pdb
+F:\3816EN_Chap07\SAVE2\PubSub-SQL - Temp\Subscriber2\bin\Debug\NServiceBus.NHibernate.xml
+F:\3816EN_Chap07\SAVE2\PubSub-SQL - Temp\Subscriber2\bin\Debug\NServiceBus.ObjectBuilder.CastleWindsor.pdb
+F:\3816EN_Chap07\SAVE2\PubSub-SQL - Temp\Subscriber2\bin\Debug\NServiceBus.ObjectBuilder.CastleWindsor.xml
+F:\3816EN_Chap07\SAVE2\PubSub-SQL - Temp\Subscriber2\bin\Debug\NServiceBus.Transports.SQLServer.pdb
+F:\3816EN_Chap07\SAVE2\PubSub-SQL - Temp\Subscriber2\bin\Debug\NServiceBus.Transports.SQLServer.xml
+F:\3816EN_Chap07\SAVE2\PubSub-SQL - Temp\Subscriber2\obj\Debug\Subscriber2.csprojResolveAssemblyReference.cache
+F:\3816EN_Chap07\SAVE2\PubSub-SQL - Temp\Subscriber2\obj\Debug\Subscriber2.dll
+F:\3816EN_Chap07\SAVE2\PubSub-SQL - Temp\Subscriber2\obj\Debug\Subscriber2.pdb
+C:\Code_August\3816_Chap06\PubSub-SQL\Subscriber2\bin\Debug\Subscriber2.dll.config
+C:\Code_August\3816_Chap06\PubSub-SQL\Subscriber2\bin\Debug\Subscriber2.dll
+C:\Code_August\3816_Chap06\PubSub-SQL\Subscriber2\bin\Debug\Subscriber2.pdb
+C:\Code_August\3816_Chap06\PubSub-SQL\Subscriber2\bin\Debug\Castle.Core.dll
+C:\Code_August\3816_Chap06\PubSub-SQL\Subscriber2\bin\Debug\Castle.Windsor.dll
+C:\Code_August\3816_Chap06\PubSub-SQL\Subscriber2\bin\Debug\Iesi.Collections.dll
+C:\Code_August\3816_Chap06\PubSub-SQL\Subscriber2\bin\Debug\log4net.dll
+C:\Code_August\3816_Chap06\PubSub-SQL\Subscriber2\bin\Debug\MyMessages.dll
+C:\Code_August\3816_Chap06\PubSub-SQL\Subscriber2\bin\Debug\NHibernate.dll
+C:\Code_August\3816_Chap06\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.Core.dll
+C:\Code_August\3816_Chap06\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.dll
+C:\Code_August\3816_Chap06\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.Host.exe
+C:\Code_August\3816_Chap06\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.NHibernate.dll
+C:\Code_August\3816_Chap06\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.ObjectBuilder.CastleWindsor.dll
+C:\Code_August\3816_Chap06\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.Transports.SQLServer.dll
+C:\Code_August\3816_Chap06\PubSub-SQL\Subscriber2\bin\Debug\MyMessages.pdb
+C:\Code_August\3816_Chap06\PubSub-SQL\Subscriber2\bin\Debug\Castle.Core.xml
+C:\Code_August\3816_Chap06\PubSub-SQL\Subscriber2\bin\Debug\Castle.Windsor.xml
+C:\Code_August\3816_Chap06\PubSub-SQL\Subscriber2\bin\Debug\Iesi.Collections.xml
+C:\Code_August\3816_Chap06\PubSub-SQL\Subscriber2\bin\Debug\log4net.xml
+C:\Code_August\3816_Chap06\PubSub-SQL\Subscriber2\bin\Debug\NHibernate.xml
+C:\Code_August\3816_Chap06\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.pdb
+C:\Code_August\3816_Chap06\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.xml
+C:\Code_August\3816_Chap06\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.Core.pdb
+C:\Code_August\3816_Chap06\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.Core.xml
+C:\Code_August\3816_Chap06\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.Host.pdb
+C:\Code_August\3816_Chap06\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.Host.xml
+C:\Code_August\3816_Chap06\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.NHibernate.pdb
+C:\Code_August\3816_Chap06\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.NHibernate.xml
+C:\Code_August\3816_Chap06\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.ObjectBuilder.CastleWindsor.pdb
+C:\Code_August\3816_Chap06\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.ObjectBuilder.CastleWindsor.xml
+C:\Code_August\3816_Chap06\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.Transports.SQLServer.pdb
+C:\Code_August\3816_Chap06\PubSub-SQL\Subscriber2\bin\Debug\NServiceBus.Transports.SQLServer.xml
+C:\Code_August\3816_Chap06\PubSub-SQL\Subscriber2\obj\Debug\Subscriber2.csprojResolveAssemblyReference.cache
+C:\Code_August\3816_Chap06\PubSub-SQL\Subscriber2\obj\Debug\Subscriber2.dll
+C:\Code_August\3816_Chap06\PubSub-SQL\Subscriber2\obj\Debug\Subscriber2.pdb
